@@ -30,17 +30,6 @@ A aplicação segue o padrão <b>MVC (Model-View-Controller)</b>:
 
 ---
 
-## 📘 Documentação da API
-
-A documentação está disponível em:
-
-- **Swagger UI:**  
-  <a href="/swagger">/swagger</a>
-
-- **Swagger JSON:**  
-  <a href="/swagger/v1/swagger.json">/swagger/v1/swagger.json</a>
-
----
 
 ## 🔑 Autenticação
 
@@ -97,6 +86,30 @@ dotnet test /p:CollectCoverage=true /p:CoverletOutput=./coverage/ /p:CoverletOut
   <code>DELETE /api/pessoas/{id}</code>
 
 ---
+
+## 📂 Endpoints Disponíveis (v2)
+
+### Pessoas
+- **Criar Pessoa**  
+  <code>POST /api/v2/pessoas</code>
+
+- **Listar Pessoas**  
+  <code>GET /api/v2/pessoas</code>
+
+- **Obter Pessoa por ID**  
+  <code>GET /api/v2/pessoas/{id}</code>
+
+- **Buscar por Nome**  
+  <code>GET /api/v2/pessoas/nome?nome={nome}</code>
+
+- **Buscar por CPF**  
+  <code>GET /api/v2/pessoas/cpf?cpf={cpf}</code>
+
+- **Atualizar Pessoa**  
+  <code>PUT /api/v2/pessoas/{id}</code>
+
+---
+
 
 ### Usuários (Autenticação)
 - **Registrar Usuário**  
